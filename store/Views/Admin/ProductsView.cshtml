@@ -1,0 +1,599 @@
+﻿@model List<store.Models.Product>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/colors.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/header.css")" />
+    <link href="~/css/homecss/pop_up/addprod.css" rel="stylesheet" />
+    <link href="~/css/HomeCss/Admin/AdminProducts.css" rel="stylesheet" />
+    <link href="~/css/homecss/pop_up/editprod.css" rel="stylesheet" />
+    <script src=""></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Header container -->
+    <header>
+        <a href="@Url.Action("GetProducts", "Admin")" class="logo"><h1 class="logo">MyPhone</h1></a>
+        <nav class="navigation">
+            <a href="@Url.Action("Logout", "Home")" id="logout-toggle" class="logout-button" name="LogoutBttn" style="color: var(--sec-color); position: absolute; top: 10px; right: 10px;">Log Out</a>
+            <a href="#" id="cartIcon"></a>
+
+        </nav>
+    </header>
+    <h1 class="prod-count" id="productCount">Products: @Model.Count</h1>
+    <div class="add-btn">
+        <button id="add-product-btn">Add Product</button>
+
+    </div>
+
+
+    <div class="products-table">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Discount</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Date Upload</th>
+                    <th>Quantity</th>
+                    <th>Popularity</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <td style="width: 50px;"><img src="@product.ImageUrl" alt="@product.Name" width="50" /></td>
+                        <td>@product.ProductID</td>
+                        <td>@product.Name</td>
+                        @if (product.Sale == 0)
+                        {
+                            <td style="font-weight:bold;font-size:22px;">-</td>
+                        }
+                        else
+                        {
+                            <td style="color: var(--sec-color);">$@product.Sale</td>
+
+                        }
+                        <td>$@product.Price</td>
+                        <td>@product.CategoryName</td>
+                        <td>@product.UploadDate.ToShortDateString()</td>
+                        <td>@product.Quantity</td>
+                        <td>@(product.IsPopular ? "Yes" : "No")</td>
+                        <td class="icons" title="Order One Product" data-productid="@product.ProductID"><img src="@Url.Content("~/assets/plus.png")" alt="green plus" width="30"></td>
+                        <td class="icons" title="Edit Product"><img src="@Url.Content("~/assets/edit.png")" alt="black edit" width="30" onclick="openEditProductPopup('@product.ProductID')"></td>
+                        <td class="icons" title="Delete Product" data-productid="@product.ProductID"><img src="@Url.Content("~/assets/delete.png")" alt="red trush" width="30"></td>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Product Popup Modal -->
+    <div id="addProductModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button -->
+            <span class="close" onclick="closeModal('addProductModal')">&times;</span>
+            <!-- Welcome line -->
+            <div id="welcome-lines">
+                <div id="welcome-line-1">Add Product</div>
+            </div>
+            <!-- Image preview -->
+            <div id="image-preview">
+                <!-- Image will be displayed here -->
+                <img id="product-image" src="@Url.Content("~/assets/camera.png")" alt="Product Image">
+            </div>
+            <!-- Choose a photo button -->
+            <button onclick="document.getElementById('image-upload').click()" class="choose-photo-btn">Choose a Photo</button>
+            <!-- Hidden file input for image upload -->
+            <input type="file" id="image-upload" style="display:none;" onchange="previewImage(event)">
+            <!-- Product name input -->
+            <input type="text" placeholder="Product Name" id="productName">
+            <!-- Price input -->
+            <input type="text" placeholder="Price" id="price">
+            <!-- Category dropdown -->
+            <select id="categoryAdd" name="category">
+                <option value="">Select Category</option>
+            </select>
+            <!-- Quantity input -->
+            <input type="text" placeholder="Quantity" id="quantity">
+            <!-- Popularity radio buttons -->
+            <div id="popularity-radio">
+                <label style="font-weight: bold;" for="popularity-yes">Popularity:</label>
+                <input type="radio" id="popularity-yes" name="popularity" value="yes">
+                <label for="popularity-yes">Yes</label>
+                <input type="radio" id="popularity-no" name="popularity" value="no">
+                <label for="popularity-no">No</label>
+            </div>
+            <!-- Error message for Popularity -->
+            <div id="popularityError" class="error-message" style="color: red;"></div>
+            <!-- Add button -->
+            <button onclick="addProduct()" class="add-product-btn">Add</button>
+        </div>
+    </div>
+
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+            <!-- Close button -->
+            <span class="close" onclick="closeModal('editProductModal')">&times;</span>
+            <!-- Welcome line -->
+            <div id="welcome-lines">
+                <div id="welcome-line-1">Edit Product</div>
+            </div>
+            <!-- Display product image -->
+            <div id="editProductImage">
+                <img class="editProductImg" id="editProductImg" src="@Url.Content("~/assets/camera.png")" alt="Product Image">
+            </div>
+            <button id="edit-image-upload-btn" onclick="document.getElementById('-edit-image-upload').click()">Update Image</button>
+            <!-- Hidden file input for image upload -->
+            <input type="file" id="-edit-image-upload" style="display:none;" onchange="updateProductImage(event)">
+            <!-- Edit Product form fields -->
+            <input type="hidden" id="productId"> <!-- Hidden field to store product ID -->
+            <input type="text" placeholder="Product Name" id="editProductName">
+            <input type="text" placeholder="Price" id="editPrice">
+            <!-- Category dropdown -->
+            <select id="editCategory" name="editCategory">
+                <option value="">Select Category</option>
+            </select>
+            <input type="text" placeholder="Quantity" id="editQuantity">
+            <!-- Sale option for admin -->
+            <div id="editSale-radio" style="text-align:center;">
+                <label style="font-weight: bold;">Sale:</label>
+                <input type="radio" id="editSale-yes" name="editSalePrice" value="yes>
+                <label for="editSalePrice-yes">&nbspAdd&nbsp</label>
+                <input type="radio" id="editSale-no" name="editSalePrice" value="no">
+                <label for="editSalePrice-no">Remove</label>
+            </div>
+            <br />
+            <input type="text" placeholder="Sale" id="editSalePrice" style="display:none">
+            <div id="editPopularity-radio">
+                <label style="font-weight: bold;">Popularity:</label>
+                <input type="radio" id="editPopularity-yes" name="editPopularity" value="yes">
+                <label for="editPopularity-yes">Yes</label>
+                <input type="radio" id="editPopularity-no" name="editPopularity" value="no">
+                <label for="editPopularity-no">No</label>
+            </div>
+            <!-- Error messages for validations -->
+            <div id="editValidationErrors" class="error-message" style="color: red;"></div>
+            <!-- Save Changes button -->
+            <button onclick="saveEditedProduct()" class="save-changes-btn">Save Changes</button>
+        </div>
+    </div>
+
+
+        <!-- Function for handling Save Changes functionality -->
+    <script>function saveEditedProduct() {
+            var productName = document.getElementById('editProductName').value;
+            var price = document.getElementById('editPrice').value;
+            var category = document.getElementById('editCategory').value;
+            var quantity = document.getElementById('editQuantity').value;
+            var isPopular = document.querySelector("#editPopularity-radio input[name='editPopularity']:checked");
+            var SaleaddChecked = document.getElementById('editSale-yes');
+            var SaleRemoveChecked = document.getElementById('editSale-no');
+
+            // Check if admin has indicated a sale
+            var sale = SaleaddChecked.checked || SaleRemoveChecked.checked ? document.getElementById('editSalePrice').value : 0;
+
+            // Validation
+            var errorMessage = "";
+            if (productName.trim().length === 0) {
+                errorMessage += "Product Name Is Required.\n";
+            }
+            if (isNaN(parseFloat(price)) || parseFloat(price) <= 0 || parseFloat(price) >= 10000) {
+                errorMessage += "Price Up to 4-digit Is Required.\n";
+            }
+            if (category.trim().length === 0) {
+                errorMessage += "Category Is Required.\n";
+            }
+            if (isNaN(parseInt(quantity)) || parseInt(quantity) < 0) {
+                errorMessage += "Quantity Is Required.\n";
+            }
+            if (!isPopular || !isPopular.value) {
+                errorMessage += "Popularity Is Required.\n";
+            }
+            if (parseFloat(sale) > parseFloat(price)) {
+                errorMessage += "Sale value is bigger than the original price.\n"
+            }
+
+            if (errorMessage !== "") {
+                // Display error message
+                document.getElementById('editValidationErrors').innerText = errorMessage;
+                return; // Prevent further execution if there are validation errors
+            }
+
+            // If all validations pass, proceed with updating the product
+            var productId = document.getElementById('productId').value;
+            // Get the image file
+            var image = document.getElementById('-edit-image-upload').files[0];
+            // value with the old sale
+            var oldSale = 0;
+
+            $.ajax({
+                type: 'GET',
+                url: '/Admin/GetProductDetails?productId=' + productId,
+                success: function (response) {
+                    oldSale = response.sale;
+
+                    // Make the new price if there is a sale on the product
+                    if (SaleRemoveChecked.checked) {
+                        price = price - (-sale);
+                        sale = 0;
+                    } else {
+                        if (oldSale > 0) {
+                            price = price - sale - (-oldSale);
+                        } else {
+                            price = price - sale;
+                        }
+                    }
+
+                    // Prepare form data to send both product data and image
+                    var formData = new FormData();
+                    formData.append('productId', productId);
+                    formData.append('productName', productName);
+                    formData.append('price', price);
+                    formData.append('category', category);
+                    formData.append('quantity', quantity);
+                    formData.append('isPopular', isPopular.value);
+                    formData.append('image', image);
+                    formData.append('sale', sale);
+
+                    // Make AJAX request to update the product details and image
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Admin/UpdateProduct',
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            // Handle success response
+                            console.log(response);
+                            closeModal('editProductModal');
+                            location.reload(); // Reload the page to reflect the changes
+                        },
+                        error: function (xhr, status, error) {
+                            // Handle error
+                            console.error(xhr.responseText);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        }</script>
+
+        @*Function to handle adding a new product*@
+        <script>function addProduct() {
+                var productName = document.getElementById('productName').value;
+                var price = document.getElementById('price').value;
+                var category = document.getElementById('categoryAdd').value;
+                var quantity = document.getElementById('quantity').value;
+                var isPopular = document.querySelector("#popularity-radio input[name='popularity']:checked");
+                var image = document.getElementById('image-upload').files[0];
+
+                // Validation
+                var errorMessage = "";
+                if (image === undefined) {
+                    errorMessage += "Product Image Is Required.\n";
+                }
+                if (productName.trim().length === 0) {
+                    errorMessage += "Product Name Is Required.\n";
+                }
+                if (isNaN(parseFloat(price)) || parseFloat(price) <= 0 || parseFloat(price) >= 10000) {
+                    errorMessage += "Price Up to 4-digit Is Required.\n";
+                }
+                if (category === "") {
+                    errorMessage += "Category Is Required.\n";
+                }
+                if (isNaN(parseInt(quantity)) || parseInt(quantity) <= 0) {
+                    errorMessage += "Quantity Is Required.\n";
+                }
+                if (!isPopular || !isPopular.value) {
+                    errorMessage += "Popularity Is Required.\n";
+                }
+                if (errorMessage !== "") {
+                    // Display error message
+                    document.getElementById('popularityError').innerText = errorMessage;
+                    return false; // Prevent form submission
+                }
+
+                var formData = new FormData();
+                formData.append('productName', productName);
+                formData.append('price', price);
+                formData.append('category', category);
+                formData.append('quantity', quantity);
+                formData.append('isPopular', isPopular ? isPopular.value : "no"); // Set default value to "no" if not selected
+                formData.append('image', image);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Admin/AddProduct',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        console.log(response);
+                        closeModal('addProductModal');
+                        location.reload(); // Reload the page to show the new product
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }</script>
+
+        <!-- Script to populate the category dropdown -->
+        <script>function populateCategoryDropdown(categories, DropBoxName) {
+                var dropdown = document.getElementById(DropBoxName);
+
+                // Clear existing options
+                dropdown.innerHTML = '';
+
+                // Add default option
+                var defaultOption = document.createElement('option');
+                defaultOption.text = 'Select Category';
+                defaultOption.value = '';
+                dropdown.add(defaultOption);
+
+                // Extract category names from objects (assuming objects have a 'CategoryName' property)
+                categories.forEach(function (category) {
+                    var categoryName = typeof category === 'object' ? category.categoryName : category;
+                    var option = document.createElement('option');
+                    option.text = categoryName;
+                    option.value = categoryName;
+                    dropdown.add(option);
+                });
+            }
+
+            // Call populateCategoryDropdown when the page is loaded
+            window.onload = function () {
+                // Make an AJAX request to fetch categories from the database
+                $.ajax({
+                    type: 'GET',
+                    url: '/Admin/GetCategories', // Replace with the correct URL
+                    success: function (response) {
+                        // Call populateCategoryDropdown with the categories received from the server
+                        populateCategoryDropdown(response, 'categoryAdd');
+                        populateCategoryDropdown(response, 'editCategory');
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error fetching categories:', error);
+                    }
+                });
+            };</script>
+
+        @*Function to handle Delete a product*@
+        <script>$(document).ready(function () {
+                $('.icons[title="Delete Product"]').click(function () {
+                    var productId = $(this).data('productid');
+                    if (confirm('Are you sure you want to delete this product?')) {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/Admin/DeleteProduct',
+                            data: { productId: productId },
+                            success: function (response) {
+                                // Remove the row from the table
+                                $('[data-productid="' + productId + '"]').closest('tr').remove();
+                                // Optionally, display a success message or perform other actions
+                                // Update product count on successful deletion
+                                var productCountElement = document.getElementById('productCount');
+                                if (productCountElement) {
+                                    var currentCount = parseInt(productCountElement.innerText.split(':')[1].trim());
+                                    productCountElement.innerText = 'Products: ' + (currentCount - 1);
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                console.error(xhr.responseText);
+                                // Optionally, display an error message or handle the error
+                            }
+                        });
+                    }
+                });
+            });</script>
+
+        @*Function to handle image preview (Edit)*@
+        <script>function updateProductImage(event) {
+                var image = document.getElementById('editProductImg');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }</script>
+
+        @*Function to handle image preview (Add)*@
+        <script>function previewImage(event) {
+                var image = document.getElementById('product-image');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            }</script>
+
+        @*Add and Edit Prodcuct PopUp JS *@
+        <script>// Function to toggle visibility of modal
+            function toggleModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = (modal.style.display === "block") ? "none" : "block";
+            }
+
+            // Function to close modal
+            function closeModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = "none";
+            }
+
+            // Get the add product button, modal, and close button
+            var addProductButton = document.getElementById("add-product-btn");
+            var addProductModal = document.getElementById("addProductModal");
+            var closeButtonAddProduct = document.querySelector("#addProductModal .close");
+
+            // Event listener for add product button click
+            addProductButton.addEventListener("click", function () {
+                toggleModal("addProductModal");
+            });
+
+            // Event listener for close button click in add product modal
+            closeButtonAddProduct.addEventListener("click", function () {
+                closeModal("addProductModal");
+            });
+
+            // Event listener for outside click in add product modal
+            window.addEventListener("click", function (event) {
+                if (event.target === addProductModal) {
+                    closeModal("addProductModal");
+                }
+            });
+
+            // Function to toggle visibility of edit modal
+            function toggleEditModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = (modal.style.display === "block") ? "none" : "block";
+            }
+
+            // Function to close edit modal
+            function closeEditModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.style.display = "none";
+            }
+
+            function deleteOptionFromDropdown(optionText, dropdownId) {
+                var dropdown = document.getElementById(dropdownId);
+                var options = dropdown.options;
+
+                for (var i = 0; i < options.length; i++) {
+                    if (options[i].text === optionText) {
+                        dropdown.remove(i); // Remove the option at index i
+                        break; // Exit the loop once the option is removed
+                    }
+                }
+            }
+
+            // Get the edit product modal and close button
+            var editProductModal = document.getElementById("editProductModal");
+            var closeButtonEditProduct = document.querySelector("#editProductModal .close");
+
+
+            // Event listener for edit product button click
+            function openEditProductPopup(productId) {
+                // AJAX call to fetch product details based on productId
+                $.ajax({
+                    type: 'GET',
+                    url: '/Admin/GetProductDetails?productId=' + productId,
+                    success: function (response) {
+
+                        // Populate fields in the Edit Product popup
+                        document.getElementById('editProductName').value = response.name;
+                        document.getElementById('editPrice').value = response.price;
+                        document.getElementById('editQuantity').value = response.quantity;
+                        document.querySelector('input[name="editPopularity"][value="' + response.isPopular + '"]').checked = true;
+                        document.getElementById('productId').value = productId;
+                        document.getElementById('editSalePrice').value = response.sale;
+                        // Update the product image
+                        var editProductImg = document.getElementById('editProductImg');
+                        editProductImg.src = response.imageUrl;
+
+                        var editCategoryDropdown = document.getElementById('editCategory');
+                        deleteOptionFromDropdown("Select Category", 'editCategory')
+
+                        // Check if the category already exists in the dropdown
+                        var existingCategories = Array.from(editCategoryDropdown.options).map(option => option.value);
+                        if (!existingCategories.includes(response.category)) {
+                            // Create and append a new option with the category name
+                            var categoryOption = document.createElement('option');
+                            categoryOption.text = response.category;
+                            categoryOption.value = response.category;
+                            editCategoryDropdown.add(categoryOption);
+                        }
+
+                        // Set the selected category to the product's category
+                        editCategoryDropdown.value = response.category;
+
+                        // Open the Edit Product popup
+                        toggleEditModal('editProductModal');
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            // function for sale visibility
+            var SaleOptionYes = document.getElementById("editSale-yes"); // for checked yes
+            var SaleOptionNo = document.getElementById("editSale-no"); // for checked no
+            var SalePrice = document.getElementById("editSalePrice"); // for the sale price box
+
+            function toggleSaleBlock_Yes() {
+                SalePrice.style.display = SaleOptionYes.checked ? 'block' : 'none';
+
+            }
+
+            function toggleSaleBlock_No() {
+                SalePrice.style.display = SaleOptionNo.checked ? 'none' : 'block';
+            }
+
+            SaleOptionYes.addEventListener('change', toggleSaleBlock_Yes);
+            SaleOptionNo.addEventListener('change', toggleSaleBlock_No);
+
+            // Event listener for close button click in edit product modal
+            closeButtonEditProduct.addEventListener("click", function () {
+                closeEditModal("editProductModal");
+            });
+
+            // Event listener for outside click in edit product modal
+            window.addEventListener("click", function (event) {
+                if (event.target === editProductModal) {
+                    closeEditModal("editProductModal");
+                }
+            });</script>
+
+
+
+        @* Order One Product functionality*@
+        <script>$(document).ready(function () {
+                $('.icons[title="Order One Product"]').click(function () {
+                    var productId = $(this).data('productid'); // Retrieve productId from data attribute
+                    var quantityCell = $(this).closest('tr').find('td:eq(7)'); // Assuming Quantity is the 7th cell
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Admin/OrderOneProduct',
+                        data: { productId: productId },
+                        success: function (response) {
+                            // Handle success response
+                            console.log(response);
+                            console.log(productId);
+                            // Increment the quantity in the UI with a fade effect
+                            var currentQuantity = parseInt(quantityCell.text());
+                            var newQuantity = currentQuantity + 1;
+                            quantityCell.fadeOut('fast', function () {
+                                quantityCell.text(newQuantity).fadeIn('fast');
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            // Handle error
+                            console.error(xhr.responseText);
+                        }
+                    });
+                });
+            });</script>
+
+</body>
+
+</html>
+

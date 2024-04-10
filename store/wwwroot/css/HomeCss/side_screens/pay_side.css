@@ -1,0 +1,85 @@
+﻿
+
+
+
+/* Pay data desigen  */
+#PaySideScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    overflow:auto;
+}
+
+#mt-thos-form { /* Target the entire form using its ID */
+    display: flex;
+    background-color: var(--back-color);
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid var(--back-color);
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+#mt-thos-form h3 {
+    color: var(--pri-color);
+}
+
+.form-group { /* We can keep the class for styling the groups */
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#fullName, /* Target specific input fields by their IDs */
+#emailAddress,
+#userAddress,
+#cardNumber,
+#expiryDate,
+#cvvCode,
+#userCity,
+#userZipCode {
+    width: 100%;
+    padding: 15px 15px; /* Increased padding for better look */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#sumbitPayment {
+    border: none;
+    color: white;
+    background-color: var(--sec-color);
+    height: 50px;
+    width: 50%;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position:relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+
+
+/* END Pay data desigen  */

@@ -1,0 +1,76 @@
+﻿.products-table {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+table {
+    border-radius: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+th {
+    background-color: var(--back-color);
+    color: var(--pri-color);
+    font-weight: bold;
+}
+
+td {
+    border-top: 1px solid #dddddd;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #dddddd;
+}
+
+.prod-count {
+    text-align: center;
+    flex: 1;
+    margin-left: 10px; /* Adjusted margin */
+}
+
+.icons {
+    background-color: white;
+    cursor: pointer;
+}
+.add-btn {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the div takes up the full height */
+}
+
+#add-product-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    #add-product-btn:hover {
+        background-color: green;
+    }
+
+
+@media (max-width: 768px) {
+    .prod-count {
+        margin-left: 0; /* Remove margin on smaller screens */
+        margin-top: 10px; /* Add top margin on smaller screens */
+        flex-basis: 100%; /* Set full width on smaller screens */
+    }
+
+    #add-product-btn {
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+}

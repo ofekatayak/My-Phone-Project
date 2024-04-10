@@ -1,0 +1,91 @@
+﻿@model List<store.Models.Order>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/colors.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/header.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/orders.css")" />
+    <script src=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="@Url.Action("Index", "Home")" class="logo"><h1 class="logo">MyPhone</h1></a>
+        <div class="titleHeader">
+            <h1>My Orders</h1>
+        </div>
+        <nav class="navigation">
+            <a href="@Url.Action("GetOrders", "Home")">My Orders</a>
+            <a href="@Url.Action("Logout", "Home")" id="logout-toggle" class="logout-button" name="LogoutBttn" style="color: var(--sec-color); position: absolute; top: 10px; right: 10px;">Log Out</a>
+        </nav>
+
+    </header>
+
+    <h1 style="text-align:center">@Model.Count Orders</h1>
+    <div class="orders-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product Name</th>
+                    <th>Amount</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+
+                        <td>@order.OrderID</td>
+                        <td>
+                            <ul>
+                                @foreach (var orderItem in order.OrderItems)
+                                {
+                                    <li> @orderItem.Product.Name</li>
+                                }
+                            </ul>
+                        </td>
+                        <td>@order.TotalPay</td>
+                        <td>
+                            <ul>
+                                @foreach (var orderItem in order.OrderItems)
+                                {
+                                    <li>@orderItem.Quantity</li>
+
+                                }
+                            </ul>
+                        </td>
+                        @if ((DateTime.Now - order.CreatedAt).TotalDays <= 2)
+                        {
+                            <td>Pending</td>
+                        }
+                        else
+                        {
+                            <td>Approved</td>
+                        }
+
+
+                        <td>@order.CreatedAt.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>

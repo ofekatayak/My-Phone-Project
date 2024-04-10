@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector.DependencyInjection" Version="2.3.5" />
+    <PackageReference Include="MyConnector" Version="1.0.118" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\css\colors.css" />
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\js\site.js" />
+    <Content Remove="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="Views\_ViewImports.cshtml" />
+    <Content Remove="Views\Home\HomeView.cshtml" />
+  </ItemGroup>
+</Project>

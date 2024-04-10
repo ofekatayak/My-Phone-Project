@@ -1,0 +1,8 @@
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.csproj.AssemblyReference.cache
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.AssemblyInfoInputs.cache
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.AssemblyInfo.cs
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.csproj.CoreCompileInputs.cache
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.MvcApplicationPartsAssemblyInfo.cache
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.RazorAssemblyInfo.cache
+/Users/ofeksmacbook/Desktop/project/MyPhone/obj/Release/net7.0/MyPhone.RazorAssemblyInfo.cs

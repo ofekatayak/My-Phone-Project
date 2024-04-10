@@ -1,0 +1,204 @@
+﻿
+/*Login and SignUp Pop-Up*/
+/* Styles for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.error-message {
+    font-size: 12px;
+}
+
+
+/* Modal content */
+.modal-content {
+    background-color: transparent !important;
+    margin: auto; 
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+/* Close button */
+.close {
+    position:absolute;
+    float:right;
+    margin-left:10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Additional styles for the form */
+#form {
+    display: grid;
+    place-items: center;
+    width: 400px;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 10px;
+   
+}
+
+.login-form { /* Style specifically for the login-up popup form */
+    height: 420px;
+}
+
+.signup-form { /* Style specifically for the sign-up popup form */
+    height: 470px;
+}
+
+#form-body {
+    width: 90%;
+}
+
+#welcome-lines {
+    text-align: center;
+    line-height: 1;
+}
+
+#welcome-line-1 {
+    color: #281158;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#welcome-line-2 {
+    color: #281158;
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+#input-area {
+    margin-top: 40px;
+}
+
+.form-inp {
+    padding: 11px 25px;
+    background: #e4e4e4;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    border-radius: 8px;
+}
+
+    .form-inp:focus {
+        border: 1px solid #EE2D60;
+    }
+
+    .form-inp:first-child {
+        margin-bottom: 15px;
+    }
+
+    .form-inp:last-child {
+        margin-top: 15px;
+    }
+
+.form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 13.4px;
+    color: #281158;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+        .form-inp input:focus {
+            outline: none;
+        }
+
+#submit-button-cvr {
+    margin-top: 20px;
+}
+
+#submit-button {
+    display: block;
+    width: 100%;
+    color: #fefefe;
+    background-color: #EE2D60;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #281158;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+    #submit-button:hover {
+        transition: all ease-in-out .3s;
+        background-color: #281158;
+        color: #fefefe;
+        cursor: pointer;
+    }
+
+#sign-up {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    #sign-up a {
+        color: #868686;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+#bar {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    width: 28px;
+    height: 8px;
+    margin-left: -33px;
+    background-color: #281158;
+    border-radius: 10px;
+}
+
+    #bar:before,
+    #bar:after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #ececec;
+        border-radius: 50%;
+    }
+
+    #bar:before {
+        right: -20px;
+    }
+
+    #bar:after {
+        right: -38px;
+    }
+
+.blur-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

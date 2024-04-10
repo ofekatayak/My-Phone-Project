@@ -1,0 +1,32 @@
+﻿
+.orders-table {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+table {
+    border-radius: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* Remove border from the whole table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+th {
+    background-color: var(--back-color); /* Main color */
+    color: var(--pri-color); /* Text color */
+    font-weight: bold; /* Bold font */
+}
+
+td {
+    border-top: 1px solid #dddddd; /* Add border only on top of each row */
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #dddddd; /* Add border bottom to the last row */
+}

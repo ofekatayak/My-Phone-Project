@@ -1,0 +1,47 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: var(--back-color);
+    margin: 0;
+}
+/* Header desigen */
+
+header {
+    background-color: var( --pri-color);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+    .navigation a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.3s;
+    }
+
+        .navigation a:hover {
+            color: #ccc;
+        }
+
+.titleHeader {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+.logout-button{
+    color:red;
+}
+
+a.logo {
+    color: white !important; /* Apply white color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* END Header desigen */

@@ -1,0 +1,21 @@
+﻿
+/* background when slide screen show  */
+#modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* close bttn for side screens */
+#closeCartModalBtn, #closeFilterModalBtn {
+    border: none;
+    background-color: white;
+}

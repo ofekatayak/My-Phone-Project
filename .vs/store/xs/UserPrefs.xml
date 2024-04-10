@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{CE6262E3-9A82-41E9-A426-535022A65CCD}|http" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.store PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="store/Services/UserService.cs">
+    <Files>
+      <File FileName="store/Views/Home/HomeView.cshtml" Line="715" Column="53" />
+      <File FileName="store/Controllers/HomeController.cs" Line="191" Column="77" />
+      <File FileName="store/Services/UserService.cs" Line="395" Column="64" />
+      <File FileName="store/Models/Product.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="store" expanded="True">
+            <Node name="store" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+</Properties>

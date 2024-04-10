@@ -1,0 +1,873 @@
+﻿@model store.ViewModels.HomeViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Phone</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/colors.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/pop_up/auth.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/header.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/categories.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/orders.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/products.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/search.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/side_screens/side_base.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/side_screens/filter_side.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/side_screens/cart_side.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/side_screens/pay_side.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/HomeCss/side_screens/notify.css")" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header container -->
+    <header>
+        <a href="@Url.Action("Index", "Home")" class="logo" id="logo"><h1>MyPhone</h1></a>
+        <div class="titleHeader">
+            <h1>Home</h1>
+        </div>
+        <nav class="navigation">
+            @if (Model.User != null)
+            {
+                <a href="@Url.Action("GetOrders", "Home")">My Orders</a>
+                <a href="@Url.Action("Logout", "Home")" id="logout-toggle" class="logout-button" name="LogoutBttn" style="color: var(--sec-color); position: absolute; top: 10px; right: 10px;">Log Out</a>
+
+            }
+            else
+            {
+                <a href="#" id="login-toggle" class="login-button" name="loginButton">Login</a>
+            }
+
+            <a href="#" id="cartIcon">
+                <img src="@Url.Content("~/assets/cart_white.png")" alt="עגלת קניות" width="30">
+            </a>
+            @if (Model.User != null && Model.Notification.List_Notification.Count == 0)
+            {
+                <a href="#" id="bellIcon">
+                    <img src="@Url.Content("~/assets/bell_Icon.png")" alt="התראות" width="30">
+                </a>
+            }
+            @if (Model.User != null)
+            {
+                foreach (var notify in Model.Notification.List_Notification)
+                {
+                    if (notify.Email == Model.User.Email)
+                    {
+                        if (notify.product.Quantity > 0)
+                        {
+                            <a href="#" id="bellIcon">
+                                <img src="@Url.Content("~/assets/red_bell_Icon.png")" alt="התראות" width="30">
+                            </a>
+                            break;
+                        }
+                        else
+                        {
+                            <a href="#" id="bellIcon">
+                                <img src="@Url.Content("~/assets/bell_Icon.png")" alt="התראות" width="30">
+                            </a>
+                        }
+                    }
+                }
+                <script>// show notification side screen
+                    document.getElementById("bellIcon").addEventListener("click", function () {
+                        var myNot = document.getElementById("notify_screen");
+                        if (myNot.style.display === "none") {
+                            myNot.style.display = "block"; // Change display to block
+                        } else {
+                            myNot.style.display = "none"; // Change display to none
+                        }
+
+                    });</script>
+            }
+        </nav>
+    </header>
+
+    <!-- Search container -->
+    <div class="search">
+        <button class="filterBttn" id="filterBttn">
+            <img src="@Url.Content("~/assets/filter_icon.png")" alt="עגלת קניות" width="30">
+        </button>
+
+        <input type="text" id="searchInput" placeholder="Search Product...">
+        <button id="searchButton" class="searchButton">
+            <img src="@Url.Content("~/assets/search.png")" width="30" alt="קטגוריה 1">
+        </button>
+    </div>
+
+    <!-- categories container -->
+    <div class="categories">
+        @foreach (var category in Model.Categories)
+        {
+            <div class="category" onclick="saveElementName(this)">
+                <img src="@category.ImageUrl" alt="קטגוריה 1">
+                <p>@category.CategoryName</p>
+            </div>
+        }
+    </div>
+
+    <!-- products container -->
+    <div class="products">
+        @foreach (var product in Model.Products)
+        {
+            <div class="product">
+                <div class="category_date_container">
+                    <p data-product-category="@product.CategoryName">@product.CategoryName</p>
+                    @if (product.IsPopular)
+                    {
+                        <p data-product-popular="@product.IsPopular">Popualr</p>
+                    }
+                    else
+                    {
+                        <p data-product-popular="@product.IsPopular"></p>
+                    }
+
+                    <p data-product-date="@product.UploadDate">@product.UploadDate.ToString("d")</p>
+
+                </div>
+                <!-- checks sale on/off -->
+                <div class="sale" style="text-align:center; ">
+                    @if (product.Sale > 0)
+                    {
+                        <p style="color:red;">On Sale !</p>
+                    }
+                    else
+                    {
+                        <p style="padding-top:19px;"></p>
+                    }
+                </div>
+                <img data-product-img="@product.ImageUrl" src="@product.ImageUrl" alt="@product.Name">
+                <h3>@product.Name</h3>
+                <!-- price options -->
+                @if (product.Sale == 0)
+                {
+                    <p data-product-price="@product.Price">Price: @product.Price $</p>
+                }
+                else
+                {
+                    <div style="display:flex; justify-content: center;">
+                        <p data-product-price="@product.Price">Price: &nbsp;</p>
+                        <p style="text-decoration:line-through">@(product.Price+product.Sale) $</p>
+                        <p style="color:red;">&nbsp @product.Price $</p>
+                    </div>
+                }
+                <p data-product-quantity="@product.Quantity">Stock: @product.Quantity</p>
+                <div class="buttonContainer">
+
+                    @if (product.Quantity > 0)
+                    {
+                        <!-- Buy now form -->
+                        <form style="display:inline" method="post" action="/Home/DirectBuy ">
+                            <input type="hidden" name="productId" value="@product.ProductID" />
+                            <button type="one-submit" class="bttnBuy">Buy</button>
+                        </form>
+
+                        <!-- Add to cart form -->
+                        <form style="display:inline" method="post" action="/Home/AddToCart ">
+                            <input type="hidden" name="productId" value="@product.ProductID" />
+                            <button type="submit" class="bttnAddToCart">Add to cart</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <!-- Notify  -->
+                        <form method="post" action="/Home/AddToNotification">
+                            <input type="hidden" name="productId" value="@product.ProductID" />
+                            <button type="submit" class="bttnNotify">Notify</button>
+                        </form>
+                    }
+
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="blur-background"></div>
+
+    <!-- Payment side screen-->
+    <div id="PaySideScreen" style="@(Model.IsPayVisible ? "display: block;" : "display: none;")">
+        <div id="modal">
+            <button id="closePayModalBtn">
+                <img src="@Url.Content("~/assets/close.png")" width="30" alt="close">
+            </button>
+            <h2 style="text-align: center;">Payment</h2>
+
+            <!-- CartItems -->
+            @if (Model.Cart != null)
+            {
+                foreach (var item in Model.Cart.CartItems)
+                {
+                    <div class="order-row">
+                        <!-- Product image -->
+                        <img width="30" class="product-image" src="@item.Product.ImageUrl" alt="Product Image">
+                        <!-- Product name -->
+                        <p>@item.Product.Name</p>
+                        <!-- Product price -->
+                        <p>@item.Product.Price</p>
+                        <!-- Product quantity buttons -->
+                        <div class="quantity-buttons">
+                            <p class="quantity-text">@item.Quantity</p>
+                        </div>
+                    </div>
+                }
+                <h3>Total: @Model.Cart.TotalPrice</h3>
+            }
+            <!-- Payment Form-->
+            <form id="mt-thos-form" asp-action="Pay" method="post">
+                <h3>Personal Details</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email:</label>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="XXX@XXX.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="userAddress">Address:</label>
+                    <input type="text" id="userAddress" name="userAddress" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="userCity">City:</label>
+                    <input type="text" id="userCity" name="userCity" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <label for="userZipCode">ZipCode:</label>
+                    <input type="text" id="userZipCode" name="userZipCode" placeholder="ZipCode" minlength="8" maxlength="8" required>
+                    <div id="zipCodeError" style="color: red;"></div> <!-- Error message for zip code -->
+                </div>
+
+                <h3>Payment Details</h3>
+                <div class="form-group" style="display: flex; align-items: center;">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19" required>
+                    <img class="image ml-1" src="https://i.imgur.com/WIAP9Ku.jpg" style="width: 60px; height: 30px;">
+                </div>
+
+                <input type="hidden" id="email" name="email" value="">
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date (MM/YY):</label>
+                    <input type="text" id="expiryDate" name="expiryDate" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM/YY" minlength="5" maxlength="5" title="Please enter a valid expiry date in the format MM/YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvvCode">CVV:</label>
+                    <input type="text" id="cvvCode" name="cvvCode" placeholder="CVV" minlength="3" maxlength="3" required>
+                </div>
+                <button id="sumbitPayment" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Zip Code Validation -->
+    <script>$(document).ready(function () {
+            var zipCodeInput = document.getElementById('userZipCode');
+            zipCodeInput.oninput = function (e) {
+                var zipCode = this.value;
+                var zipCodePattern = /^\d{1,8}$/; // Regular expression to match 1 to 8 digits
+
+                if (!zipCodePattern.test(zipCode)) {
+                    // Show error message
+                    document.getElementById('zipCodeError').innerText = "Zip code must be a number and not exceed 8 digits!";
+                } else {
+                    // Clear error message if zip code is valid
+                    document.getElementById('zipCodeError').innerText = "";
+                }
+            };
+        });</script>
+
+    <!-- Cart side screen-->
+    <div id="cartSideScreen" style="@(Model.isCartVisible ? "display: block;" : "display: none;")">
+        <div id="modal">
+            <!-- Cart container -->
+            <div class="cart-container">
+                <button id="closeCartModalBtn">
+                    <img src="@Url.Content("~/assets/close.png")" width="30" alt="close">
+                </button>
+                <!-- Cart title -->
+                <h2 class="cart-title" style="text-align:center">My Cart</h2>
+                <!-- Cart and close icons -->
+                <div>
+                    <img class="cart-icon" src="@Url.Content("~/assets/cart.png")" alt="Cart Icon">
+                </div>
+            </div>
+
+            <!-- Cart items -->
+            @if (Model.Cart != null && Model.Cart.CartItems.Count > 0)
+            {
+                foreach (var item in Model.Cart.CartItems)
+                {
+                    <div class="order-row">
+                        <!-- Product image -->
+                        <img width="30" class="product-image" src="@item.Product.ImageUrl" alt="Product Image">
+                        <!-- Product name -->
+                        <p>@item.Product.Name</p>
+                        <!-- Product price -->
+                        <p>@item.Product.Price</p>
+                        <!-- Product quantity buttons -->
+                        <div class="quantity-buttons">
+                            <form method="post" action="/Home/DecrementCartItem/">
+                                <!-- Update action to point to the appropriate controller -->
+                                <input type="hidden" name="productId" value="@item.Product.ProductID" />
+                                <button class="quantity-button decrement" type="submit">-</button>
+                            </form>
+                            <p class="quantity-text">@item.Quantity</p>
+                            <form method="post" action="/Home/AddToCart">
+                                <!-- Update action to point to the appropriate controller -->
+                                <input type="hidden" name="productId" value="@item.Product.ProductID" />
+                                <button class="quantity-button increment" type="submit">+</button>
+                            </form>
+                        </div>
+
+                        <!-- Delete icon -->
+                        <form method="post" action="/Home/RemoveFromCart">
+                            <!-- Ensure this action is pointing to the correct controller -->
+                            <input type="hidden" name="productId" value="@item.Product.ProductID" />
+                            <button style="border:none" type="submit">
+                                <img class="delete-icon" src="@Url.Content("~/assets/delete.png")" alt="Delete Icon">
+                            </button>
+                        </form>
+                    </div>
+                }
+
+                <!-- Pay now button -->
+                <div>
+                    <button id="pay-now-button" class="pay-now-button">Pay Now</button>
+                </div>
+                <h2>Total: @Model.Cart.TotalPrice</h2>
+                <script>// show Payment side screen
+                    document.getElementById("pay-now-button").addEventListener("click", function () {
+                        var payDiv = document.getElementById('PaySideScreen');
+                        var cartDiv = document.getElementById('cartSideScreen');
+
+                        if (payDiv.style.display === "none") {
+                            payDiv.style.display = "block";
+                            cartDiv.style.display = "none";
+                        } else {
+                            payDiv.style.display = "none";
+                        }
+                    });</script>
+            }
+            else
+            {
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+                    <img src="@Url.Content("~/assets/empty_cart.png")" alt="עגלת קניות" height="200" width="200"> <br />
+                    <div>
+                        <p>Your cart is empty!</p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+
+    <!-- Filter side screen-->
+    <div id="filterSideScreen">
+        <div id="modal">
+
+            <button id="closeFilterModalBtn">
+                <img src="@Url.Content("~/assets/close.png")" width="30" alt="close">
+            </button>
+
+            <h2 style="text-align: center;">Filter</h2>
+            <div class="filter-section-searchBy">
+                <h3>Search by</h3>
+                <select id="searchBySelect">
+                    <option value="none">None</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="ExpensiveToCheap">From Expensive to Cheap</option>
+                    <option value="CheapToExpensive">From Cheap to Expensive</option>
+                    <option value="onsale">On Sale</option>
+                </select>
+            </div>
+            <div class="filter-section-category">
+                <h3>Category</h3>
+                <select id="categorySelect">
+                    <option>All</option>
+                    <option>Apple</option>
+                    <option>Samsung</option>
+                    <option>Google</option>
+                    <option>One Plus</option>
+                    <option>Nokia</option>
+                    <option>Sony</option>
+                </select>
+            </div>
+            <div class="filter-section-price">
+                <h3>Price</h3>
+                <input type="number" id="fromPriceInput" name="text" class="input" placeholder="From price">
+                <input type="number" id="toPriceInput" name="text" class="input" placeholder="To price">
+
+            </div>
+            <div class="filter-section-date">
+                <h3>Date</h3>
+                <input type="date" id="fromDateInput" name="text" class="input" placeholder="From date">
+                <input type="date" id="toDateInput" name="text" class="input" placeholder="To date">
+
+            </div>
+
+
+            <div>
+                <button id="applyFilterBtn" class="bttnApplyFilter">Apply</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Notify side screen -->
+    <div id="notify_screen" class="notify">
+        <div id="modal">
+
+            <!-- Notify cont. -->
+            <div class="notify-container">
+                <button id="closeNotificationModalBtn">
+                    <img src="@Url.Content("~/assets/close.png")" width="30" alt="close">
+                </button>
+
+                <!-- title -->
+                <h2 class="notifies-title" style="text-align:center">Notification</h2>
+                <div>
+                    <img class="Notification-icon" src="@Url.Content("~/assets/bell_Icon_Info.png")" alt="Bell Icon" width="30" height="30">
+                </div>
+            </div>
+
+            <!-- notification box -->
+            @if (Model.User != null)
+            {
+                @foreach (var notify in Model.Notification.List_Notification)
+                {
+                    @if (notify.product.Quantity > 0)
+                    {
+                        <div class="list-notification" style="border-radius: 10px; background-color: var(--back-color);display:flex;justify-content: space-between;align-items: center;   padding-top:15px; margin-top:15px;">
+
+                            <p style="padding-left:15px; font-family:Arial; color:black;"> Hey! the @notify.product.Name is back on Stock!!</p>
+
+                            <form method="post" action="/Home/RemoveFromNotification">
+                                <input type="hidden" name="productId" value="@notify.product.ProductID" />
+                                <button style="border:none; background:none; padding-right:20px; padding-bottom: 10px;" type="submit">
+                                    <img class="delete-icon1" src="@Url.Content("~/assets/delete.png")" alt="Delete Icon1" width="30" height="30" /> <!-- need to make new icon of delete for drop the notify -->
+                                </button>
+                            </form>
+                        </div>
+                    }
+                }
+                <script>// hide notification side screen
+                    document.getElementById("closeNotificationModalBtn").addEventListener("click", function () {
+                        var notSide = document.getElementById("notify_screen");
+                        notSide.style.display = "none";
+                    });</script>
+            }
+        </div>
+    </div>
+
+    <!------POPUPS ------>
+    <!--Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <!-- Login form goes here -->
+            <div id="form-ui">
+                <span class="close">&times;</span>
+                <form asp-action="Login" method="post" id="form" class="login-form" onsubmit="return LoginForm(event)">
+                    <div id="form-body">
+                        <div id="welcome-lines">
+                            <div id="welcome-line-1">Login</div>
+                            <div id="welcome-line-2">Welcome Back</div>
+                        </div>
+                        <div id="input-area">
+                            <div class="form-inp">
+                                <input id="email-login" placeholder="Email" type="text" name="Email">
+                                <div id="email-error-login" class="error-message" style="color: red;"></div>
+                            </div>
+                            <div class="form-inp">
+                                <input id="password-login" t placeholder="Password" type="password" name="Password">
+                                <div id="password-error-login" class="error-message" style="color: red;"></div>
+                            </div>
+                        </div>
+                        <div id="login-error" class="error-message" style="color: red;"></div>
+                        <div id="submit-button-cvr">
+                            <button id="submit-button" type="submit">Login</button>
+                        </div>
+                        <div id="sign-up">
+                            <a href="#">Sign Up</a>
+                        </div>
+                        <div id="bar"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <!-- Sign Up form goes here -->
+            <div id="form-ui">
+                <span class="close">&times;</span>
+                <form asp-action="SignUp" method="post" id="form" class="signup-form" onsubmit="return validateForm(event)">
+                    <div id="form-body">
+                        <div id="welcome-lines">
+                            <div id="welcome-line-1">Sign Up</div>
+                            <div id="welcome-line-2">Create an Account</div>
+                        </div>
+                        <div id="input-area">
+                            <div class="form-inp">
+                                <input id="name-signup" placeholder="Name" type="text" name="Name">
+                                <div id="name-error-signup" class="error-message" style="color: red;"></div>
+                            </div>
+                            <div class="form-inp">
+                                <input id="email-signup" placeholder="Email" type="text" name="Email">
+                                <div id="email-error-signup" class="error-message" style="color: red;"></div>
+                            </div>
+                            <div class="form-inp">
+                                <input id="password-signup" placeholder="Password" type="password" name="Password">
+                                <div id="password-error-signup" class="error-message" style="color: red;"></div>
+                            </div>
+                        </div>
+                        <div id="submit-button-cvr">
+                            <button id="submit-button" type="submit">Sign Up</button>
+                        </div>
+                        <div id="sign-up">
+                            <a id="already-have-account" href="#">Already have an account? Log In</a>
+                        </div>
+                        <div id="bar"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!------- Scripts-------->
+    <!------- Login Verification-------->
+    <script>async function LoginForm(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            var LoginElement = document.querySelector(".login-form");
+            const emailInput = document.querySelector('#email-login');
+            const passwordInput = document.querySelector('#password-login');
+            const emailError = document.getElementById('email-error-login');
+            const passwordError = document.getElementById('password-error-login');
+            let flag = true;
+            let userExists = false;
+
+            // Clear previous error messages
+            emailError.textContent = '';
+            passwordError.textContent = '';
+
+
+            // Check inputs
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Corrected email pattern
+            if (!emailPattern.test(emailInput.value.trim())) {
+                emailError.textContent = 'Invalid email address.';
+                flag = false;
+            }
+            // Check if password is empty
+            if (!passwordInput.value.trim()) {
+                passwordError.textContent = 'Password is required.';
+                flag = false;
+            }
+            if (flag) {
+                userExists = await ValidateUser(emailInput.value.trim(), passwordInput.value.trim());
+                // If the above line completes without throwing an error, it means the user exists
+            }
+
+            // Log userExists after validation
+            console.log('userExists:', userExists);
+
+            // Log flag after all validations
+            console.log("flag: ", flag);
+
+            // If all validations pass, allow form submission
+            if (userExists) {
+                LoginElement.submit();
+            }
+            else {
+                passwordError.textContent = 'Invalid Password.';
+                return false;
+            }
+        }
+        async function ValidateUser(email, password) {
+            const response = await fetch(`/Home/ValidateUser?email=${email}&password=${password}`);
+            const data = await response.json();
+            console.log(data); // Log response data for debugging
+            return data.exists; // Return true or false directly
+        }</script>
+
+    <!------- Sign Up validation -------->
+    <script>async function checkEmailExists(email) {
+            const response = await fetch(`/Home/CheckEmailExists?email=${email}`);
+            const data = await response.json();
+            console.log(data); // Log response data for debugging
+            return data.exists; // Return true or false directly
+        }
+        async function validateForm(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            var signUpElement = document.querySelector(".signup-form");
+            const nameInput = document.querySelector('#name-signup');
+            const emailInput = document.querySelector('#email-signup');
+            const passwordInput = document.querySelector('#password-signup');
+            const nameError = document.getElementById('name-error-signup');
+            const emailError = document.getElementById('email-error-signup');
+            const passwordError = document.getElementById('password-error-signup');
+
+            // Clear previous error messages
+            nameError.textContent = '';
+            emailError.textContent = '';
+            passwordError.textContent = '';
+            let flag = true;
+            let emailIsOk = true;
+
+            // Check Name
+            if (nameInput.value.trim() === '') {
+                nameError.textContent = 'Name is required.';
+                flag = false;
+            }
+
+            // Check Email
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Corrected email pattern
+            if (!emailPattern.test(emailInput.value.trim())) {
+                emailError.textContent = 'Invalid email address.';
+                flag = false;
+            } else {
+                // Check if email exists in database
+                const emailExists = await checkEmailExists(emailInput.value.trim()); // Await here
+                console.log(emailExists);
+                if (emailExists) {
+                    emailError.textContent = 'Email already exists.';
+                    flag = false;
+                }
+            }
+
+            // Check Password
+            if (passwordInput.value.trim().length < 6) {
+                passwordError.textContent = 'Password must be at least 6 characters long.';
+                flag = false;
+            }
+
+            // If all validations pass, allow form submission
+            if (flag) {
+                signUpElement.submit();
+            }
+
+            // If all validations pass, allow form submission
+            console.log("flag: " + flag + ", Vallidatios: " + flag);
+            return flag;
+        }</script>
+
+    @*  Search + Filter *@
+    <script>
+        //filter
+        document.addEventListener("DOMContentLoaded", function() {
+        const filterSideScreen = document.getElementById("filterSideScreen");
+        const closeFilterModalBtn = document.getElementById("closeFilterModalBtn");
+        const applyFilterBtn = document.getElementById("applyFilterBtn");
+
+            // Show filter side screen when the filter button is clicked
+            document.getElementById("filterBttn").addEventListener("click", function() {
+                filterSideScreen.style.display = "block";
+            });
+
+            // Hide filter side screen when the close button is clicked
+            closeFilterModalBtn.addEventListener("click", function() {
+                filterSideScreen.style.display = "none";
+            });
+
+            // Apply filter logic
+            applyFilterBtn.addEventListener("click", function () {
+                console.log("Apply filter button clicked");
+                // Retrieve filter values
+                const searchBy = document.getElementById("searchBySelect").value;
+                const category = document.getElementById("categorySelect").value;
+                const fromPrice = document.getElementById("fromPriceInput").value;
+                const toPrice = document.getElementById("toPriceInput").value;
+                const fromDate = document.getElementById("fromDateInput").value;
+                const toDate = document.getElementById("toDateInput").value;
+                // Initialize the query string
+               let query = "SELECT * FROM Product WHERE "; // Start with a true condition
+
+                // Array to hold conditions
+                const conditions = [];
+
+
+                if (category !== "All") {
+                    conditions.push(`CategoryName LIKE '${category}'`);
+                }
+                if (fromPrice === "" && toPrice !== "") {
+                    conditions.push(`Price BETWEEN 0 AND ${toPrice}`);
+                }
+                if (fromPrice !== "" && toPrice === "") {
+                    conditions.push(`Price BETWEEN ${fromPrice} AND 9999`);
+                }
+                if (fromPrice !== "" && toPrice !== "") {
+                    conditions.push(`Price BETWEEN ${fromPrice} AND ${toPrice}`);
+                }
+
+                if (fromDate !== "" && toDate !== "") {
+                    conditions.push(`UploadDate BETWEEN '${fromDate}' AND '${toDate}'`);
+                }
+
+                if (searchBy === "popular") {
+                    conditions.push("IsPopular = True")
+                }
+                if (searchBy === "onsale") {
+                    conditions.push("SalePrice > 0")
+                }
+                // Combine conditions into the query
+                if (conditions.length > 0) {
+                    query += " " + conditions.join(" AND ");
+                } else {
+                    query += " 1 = 1";
+                }
+
+                // Add search by condition if applicable
+                switch (searchBy) {
+
+                    case "ExpensiveToCheap":
+                        query += " ORDER BY Price DESC"; // DESC for descending order (expensive to cheap)
+                        break;
+
+                    case "CheapToExpensive":
+                        query += " ORDER BY Price ASC"
+                        break;
+
+                }
+
+
+                window.location.href = "@Url.Action("Filter", "Home")?query=" + encodeURIComponent(query);
+                // Now the query string contains the dynamic conditions
+                console.log("Generated query:", query);
+
+
+
+            });
+
+
+        });
+
+        // Search functionality
+        document.getElementById("searchButton").addEventListener("click", function() {
+            const query = document.getElementById("searchInput").value.trim(); // Get the search query
+            if (query !== "") {
+              // Redirect to the search action with the query as a parameter
+               window.location.href = "@Url.Action("Search", "Home")?query=" + encodeURIComponent(query);
+            }
+        });
+    </script>
+
+    @*  Payment *@
+    <script>$(document).ready(function () {
+            // When the form is submitted
+            $("#mt-thos-form").submit(function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+
+                // Get the email from the input field
+                var email = $("#emailAddress").val();
+
+                // Set the value of the hidden email input field
+                $("#email").val(email);
+
+                // Submit the form
+                this.submit();
+            });
+        });</script>
+
+    @*  Payment inputs script *@
+    <script>$(document).ready(function () {
+            //For Card Number formatted input
+            var cardNum = document.getElementById('cardNumber');
+            cardNum.onkeyup = function (e) {
+                if (this.value == this.lastValue) return;
+                var caretPosition = this.selectionStart;
+                var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
+                var parts = [];
+                for (var i = 0, len = sanitizedValue.length; i < len; i += 4) { parts.push(sanitizedValue.substring(i, i + 4)); } for (var i = caretPosition - 1; i >= 0; i--) {
+                    var c = this.value[i];
+                    if (c < '0' || c > '9') {
+                        caretPosition--;
+                    }
+                }
+                caretPosition += Math.floor(caretPosition / 4);
+                this.value = this.lastValue = parts.join(' ');
+                this.selectionStart = this.selectionEnd = caretPosition;
+            }
+            //For Date formatted input
+            var expDate = document.getElementById('expiryDate');
+            expDate.onkeyup = function (e) {
+                if (this.value == this.lastValue) return;
+                var caretPosition = this.selectionStart;
+                var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
+                var parts = [];
+                for (var i = 0, len = sanitizedValue.length; i < len; i += 2) { parts.push(sanitizedValue.substring(i, i + 2)); } for (var i = caretPosition - 1; i >= 0; i--) {
+                    var c = this.value[i];
+                    if (c < '0' || c > '9') {
+                        caretPosition--;
+                    }
+                }
+                caretPosition += Math.floor(caretPosition / 2);
+                this.value = this.lastValue = parts.join('/');
+                this.selectionStart = this.selectionEnd = caretPosition;
+            }
+            cardNum.onkeyup = function (e) {
+                if (this.value == this.lastValue) return;
+                var caretPosition = this.selectionStart;
+                var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
+                var parts = [];
+                for (var i = 0, len = sanitizedValue.length; i < len; i += 4) { parts.push(sanitizedValue.substring(i, i + 4)); } for (var i = caretPosition - 1; i >= 0; i--) {
+                    var c = this.value[i];
+                    if (c < '0' || c > '9') {
+                        caretPosition--;
+                    }
+                }
+                caretPosition += Math.floor(caretPosition / 4);
+                this.value = this.lastValue = parts.join(' ');
+                this.selectionStart = this.selectionEnd = caretPosition;
+            }
+
+            //For CVV formatted input
+            var cvv = document.getElementById('cvvCode');
+            function formatCVVInput(inputElement, maxLength) {
+                inputElement.oninput = function (e) {
+                    if (this.value == this.lastValue) return;
+                    var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
+                    if (maxLength && sanitizedValue.length > maxLength) {
+                        sanitizedValue = sanitizedValue.substr(0, maxLength);
+                    }
+                    this.value = this.lastValue = sanitizedValue;
+                };
+            }
+
+            // Apply the function to the CVV input
+            formatCVVInput(cvv, 3); // 3 digits
+
+        });</script>
+
+
+    @*  ZipCode input script *@
+    <script>$(document).ready(function () {
+            var zipCodeInput = document.getElementById('userZipCode');
+            zipCodeInput.oninput = function (e) {
+                var zipCode = this.value;
+                var zipCodePattern = /^\d{1,8}$/; // Regular expression to match 1 to 8 digits
+
+                if (!zipCodePattern.test(zipCode)) {
+                    // Show error message
+                    document.getElementById('zipCodeError').innerText = "Zip code must be a number and not exceed 8 digits!";
+
+                    // Remove non-digit characters from input
+                    this.value = this.value.replace(/\D/g, '');
+                } else {
+                    // Clear error message if zip code is valid
+                    document.getElementById('zipCodeError').innerText = "";
+                }
+            };
+        });</script>
+
+
+
+    <script src="~/js/pop_ups.js"></script>
+    <script src="~/js/side_screens.js"></script>
+</body>
+</html>

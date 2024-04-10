@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-store-ae64ecb8-3531-40d2-ae81-69b5a1ea17a8</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Orders\" />
+    <None Remove="Services\" />
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+    <PackageReference Include="LiveReload" Version="1.0.1" />
+    <PackageReference Include="NuGet.Packaging" Version="6.9.1" />
+    <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.5" />
+    <PackageReference Include="MySqlConnector.DependencyInjection" Version="2.3.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="Views\Orders\" />
+    <Folder Include="wwwroot\css\Admin\" />
+    <Folder Include="wwwroot\css\HomeCss\" />
+    <Folder Include="wwwroot\css\HomeCss\side_screens\" />
+    <Folder Include="wwwroot\css\HomeCss\pop_up\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\css\Admin\" />
+    <Content Remove="wwwroot\css\HomeCss\" />
+    <Content Remove="wwwroot\css\HomeCss\side_screens\" />
+    <Content Remove="wwwroot\css\HomeCss\pop_up\" />
+    <Content Remove="wwwroot\assets\cart.png" />
+    <Content Remove="wwwroot\assets\search.png" />
+    <Content Remove="wwwroot\assets\filter_icon.png" />
+    <Content Remove="wwwroot\assets\delete.png" />
+    <Content Remove="wwwroot\assets\cart_white.png" />
+    <Content Remove="wwwroot\assets\apple\apple_logo.png" />
+    <Content Remove="wwwroot\assets\apple\iphone_15_pink.png" />
+    <Content Remove="wwwroot\assets\apple\iphone_15_black.png" />
+    <Content Remove="wwwroot\assets\apple\iphone_15_grey.png" />
+    <Content Remove="wwwroot\assets\apple\iphone_15_white.png" />
+    <Content Remove="wwwroot\assets\samsung\samsung_24.png" />
+    <Content Remove="wwwroot\assets\samsung\samsung_logo.png" />
+  </ItemGroup>
+</Project>
