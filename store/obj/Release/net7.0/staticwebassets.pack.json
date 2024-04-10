@@ -1,395 +1,395 @@
 {
   "Files": [
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/.DS_Store",
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/.DS_Store",
       "PackagePath": "staticwebassets/assets/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/.DS_Store",
       "PackagePath": "staticwebassets/assets/Categories/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/apple_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/apple_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/apple_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/google_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/google_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/google_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/nokia_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/nokia_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/nokia_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/oneplus_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/oneplus_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/oneplus_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/samsung_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/samsung_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/samsung_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/sony_logo.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/sony_logo.png",
       "PackagePath": "staticwebassets/assets/Categories/sony_logo.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/bell_Icon.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/bell_Icon.png",
       "PackagePath": "staticwebassets/assets/bell_Icon.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/bell_Icon_Info.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/bell_Icon_Info.png",
       "PackagePath": "staticwebassets/assets/bell_Icon_Info.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/camera.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/camera.png",
       "PackagePath": "staticwebassets/assets/camera.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/close.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/close.png",
       "PackagePath": "staticwebassets/assets/close.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/edit.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/edit.png",
       "PackagePath": "staticwebassets/assets/edit.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/empty_cart.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/empty_cart.png",
       "PackagePath": "staticwebassets/assets/empty_cart.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/plus.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/plus.png",
       "PackagePath": "staticwebassets/assets/plus.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/red_bell_Icon.png",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/red_bell_Icon.png",
       "PackagePath": "staticwebassets/assets/red_bell_Icon.png"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/.DS_Store",
       "PackagePath": "staticwebassets/css/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/.DS_Store",
       "PackagePath": "staticwebassets/css/HomeCss/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/Admin/AdminProducts.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/Admin/AdminProducts.css",
       "PackagePath": "staticwebassets/css/HomeCss/Admin/AdminProducts.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/categories.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/categories.css",
       "PackagePath": "staticwebassets/css/HomeCss/categories.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/header.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/header.css",
       "PackagePath": "staticwebassets/css/HomeCss/header.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/orders.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/orders.css",
       "PackagePath": "staticwebassets/css/HomeCss/orders.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/.DS_Store",
       "PackagePath": "staticwebassets/css/HomeCss/pop_up/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/AddProd.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/AddProd.css",
       "PackagePath": "staticwebassets/css/HomeCss/pop_up/AddProd.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/EditProd.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/EditProd.css",
       "PackagePath": "staticwebassets/css/HomeCss/pop_up/EditProd.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/auth.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/auth.css",
       "PackagePath": "staticwebassets/css/HomeCss/pop_up/auth.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/products.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/products.css",
       "PackagePath": "staticwebassets/css/HomeCss/products.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/search.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/search.css",
       "PackagePath": "staticwebassets/css/HomeCss/search.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/.DS_Store",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/.DS_Store",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/.DS_Store"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/cart_side.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/cart_side.css",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/cart_side.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/filter_side.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/filter_side.css",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/filter_side.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/notify.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/notify.css",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/notify.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/pay_side.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/pay_side.css",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/pay_side.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/side_base.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/side_base.css",
       "PackagePath": "staticwebassets/css/HomeCss/side_screens/side_base.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/colors.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/colors.css",
       "PackagePath": "staticwebassets/css/colors.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/site.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/favicon.ico",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/auth_validations.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/auth_validations.js",
       "PackagePath": "staticwebassets/js/auth_validations.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/pop_ups.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/pop_ups.js",
       "PackagePath": "staticwebassets/js/pop_ups.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/side_screens.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/side_screens.js",
       "PackagePath": "staticwebassets/js/side_screens.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/LICENSE",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/LICENSE.md",
       "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/LICENSE.txt",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.min.js",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Id": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {

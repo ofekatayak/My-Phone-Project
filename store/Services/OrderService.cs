@@ -39,7 +39,7 @@ namespace store.Services
             {
                 OrderID = GenerateOrderId(),
                 UserEmail = emailSession,
-                Status = "Panding",
+                Status = "Pending",
                 CreatedAt = DateTime.Now,
                 TotalPay = cart.TotalPrice,
                 

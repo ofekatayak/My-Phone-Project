@@ -175,10 +175,19 @@
                     else
                     {
                         <!-- Notify  -->
-                        <form method="post" action="/Home/AddToNotification">
-                            <input type="hidden" name="productId" value="@product.ProductID" />
-                            <button type="submit" class="bttnNotify">Notify</button>
-                        </form>
+                        @if (Model.User == null)
+                        {
+                            <!-- If user is null, display an alert -->
+                            <button type="button" class="bttnNotify" onclick="alert('Only registered users can notify products.')">Notify</button>
+                        }
+                        else
+                        {
+                            <!-- If user is not null, display the notify form -->
+                <form method="post" action="/Home/AddToNotification">
+                    <input type="hidden" name="productId" value="@product.ProductID" />
+                    <button type="submit" class="bttnNotify" onclick="alert('We will notify you when the product is back in stock.')">Notify</button>
+                </form>
+                        }
                     }
 
                 </div>
@@ -776,74 +785,59 @@
 
     @*  Payment inputs script *@
     <script>$(document).ready(function () {
-            //For Card Number formatted input
+            // For Card Number formatted input
             var cardNum = document.getElementById('cardNumber');
-            cardNum.onkeyup = function (e) {
-                if (this.value == this.lastValue) return;
-                var caretPosition = this.selectionStart;
+            cardNum.oninput = function (e) {
                 var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
-                var parts = [];
-                for (var i = 0, len = sanitizedValue.length; i < len; i += 4) { parts.push(sanitizedValue.substring(i, i + 4)); } for (var i = caretPosition - 1; i >= 0; i--) {
-                    var c = this.value[i];
-                    if (c < '0' || c > '9') {
-                        caretPosition--;
-                    }
+                var maxLength = 16; // Total number of digits for a credit card number
+                if (sanitizedValue.length > maxLength) {
+                    sanitizedValue = sanitizedValue.substr(0, maxLength);
                 }
-                caretPosition += Math.floor(caretPosition / 4);
-                this.value = this.lastValue = parts.join(' ');
-                this.selectionStart = this.selectionEnd = caretPosition;
+                var parts = [];
+                for (var i = 0, len = sanitizedValue.length; i < len; i += 4) {
+                    parts.push(sanitizedValue.substring(i, i + 4));
+                }
+                this.value = parts.join(' ');
+
+                // Update the validity of the input field
+                var isValidLength = sanitizedValue.length === maxLength;
+                this.setCustomValidity(isValidLength ? '' : 'Please enter exactly 16 digits for the card number.');
             }
-            //For Date formatted input
+
+            // For Date formatted input
             var expDate = document.getElementById('expiryDate');
-            expDate.onkeyup = function (e) {
-                if (this.value == this.lastValue) return;
-                var caretPosition = this.selectionStart;
+            expDate.oninput = function (e) {
                 var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
-                var parts = [];
-                for (var i = 0, len = sanitizedValue.length; i < len; i += 2) { parts.push(sanitizedValue.substring(i, i + 2)); } for (var i = caretPosition - 1; i >= 0; i--) {
-                    var c = this.value[i];
-                    if (c < '0' || c > '9') {
-                        caretPosition--;
-                    }
+                var parts = sanitizedValue.match(/^(\d{2})(\d{2})$/); // Match MMYY format
+                if (parts) {
+                    var month = parseInt(parts[1], 10);
+                    var year = parseInt(parts[2], 10);
+                    var currentDate = new Date();
+                    var enteredDate = new Date(2000 + year, month - 1, 1); // Assuming the year to be in the 21st century
+                    enteredDate.setMonth(enteredDate.getMonth() + 1); // Adding one month to the entered date
+                    var isValidDate = enteredDate > currentDate;
+                    this.setCustomValidity(isValidDate ? '' : 'Please enter a future expiry date.');
+                    this.value = parts[1] + '/' + parts[2]; // Format the input back to MM/YY
+                } else {
+                    this.setCustomValidity('Please enter a valid expiry date in the format MM/YY.');
                 }
-                caretPosition += Math.floor(caretPosition / 2);
-                this.value = this.lastValue = parts.join('/');
-                this.selectionStart = this.selectionEnd = caretPosition;
-            }
-            cardNum.onkeyup = function (e) {
-                if (this.value == this.lastValue) return;
-                var caretPosition = this.selectionStart;
-                var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
-                var parts = [];
-                for (var i = 0, len = sanitizedValue.length; i < len; i += 4) { parts.push(sanitizedValue.substring(i, i + 4)); } for (var i = caretPosition - 1; i >= 0; i--) {
-                    var c = this.value[i];
-                    if (c < '0' || c > '9') {
-                        caretPosition--;
-                    }
-                }
-                caretPosition += Math.floor(caretPosition / 4);
-                this.value = this.lastValue = parts.join(' ');
-                this.selectionStart = this.selectionEnd = caretPosition;
             }
 
-            //For CVV formatted input
+            // For CVV formatted input
             var cvv = document.getElementById('cvvCode');
-            function formatCVVInput(inputElement, maxLength) {
-                inputElement.oninput = function (e) {
-                    if (this.value == this.lastValue) return;
-                    var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
-                    if (maxLength && sanitizedValue.length > maxLength) {
-                        sanitizedValue = sanitizedValue.substr(0, maxLength);
-                    }
-                    this.value = this.lastValue = sanitizedValue;
-                };
-            }
+            cvv.oninput = function (e) {
+                var sanitizedValue = this.value.replace(/[^0-9]/gi, '');
+                var maxLength = 3; // CVV usually has 3 digits
+                if (sanitizedValue.length > maxLength) {
+                    sanitizedValue = sanitizedValue.substr(0, maxLength);
+                }
+                this.value = sanitizedValue;
 
-            // Apply the function to the CVV input
-            formatCVVInput(cvv, 3); // 3 digits
-
+                // Update the validity of the input field
+                var isValidLength = sanitizedValue.length === maxLength;
+                this.setCustomValidity(isValidLength ? '' : 'Please enter exactly 3 digits for the CVV.');
+            };
         });</script>
-
 
     @*  ZipCode input script *@
     <script>$(document).ready(function () {

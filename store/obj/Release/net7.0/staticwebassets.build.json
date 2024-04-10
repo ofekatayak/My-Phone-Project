@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h2VxBJdQK7YFeb3bU8Hlh38f735M4NTWWakYfUgeYpA=",
+  "Hash": "X7Kf37LRbol7gwR36F19f9zArPpdYaac665+N8TzU0k=",
   "Source": "store",
   "BasePath": "_content/store",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "store/wwwroot",
       "Source": "store",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "/Users/ofeksmacbook/.nuget/packages/microsoft.aspnetcore.identity.ui/7.0.15/staticwebassets/V5/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/.DS_Store",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/assets/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/bell_Icon_Info.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/bell_Icon_Info.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/bell_Icon_Info.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/assets/bell_Icon_Info.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/bell_Icon.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/bell_Icon.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/bell_Icon.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/assets/bell_Icon.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/camera.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/camera.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/camera.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/assets/camera.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/.DS_Store",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/apple_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/apple_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/apple_logo.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/apple_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/google_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/google_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/google_logo.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/google_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/nokia_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/nokia_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/nokia_logo.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/nokia_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/oneplus_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/oneplus_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/oneplus_logo.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/oneplus_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/samsung_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/samsung_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/samsung_logo.png",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/samsung_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/Categories/sony_logo.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/Categories/sony_logo.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/Categories/sony_logo.png",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot/assets/Categories/sony_logo.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/close.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/close.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/close.png",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot/assets/close.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/edit.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/edit.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/edit.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot/assets/edit.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/empty_cart.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/empty_cart.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/empty_cart.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot/assets/empty_cart.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/plus.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/plus.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/plus.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot/assets/plus.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/assets/red_bell_Icon.png",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/assets/red_bell_Icon.png",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "assets/red_bell_Icon.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot/assets/red_bell_Icon.png"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/.DS_Store",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot/css/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/colors.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/colors.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/colors.css",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot/css/colors.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/.DS_Store",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/Admin/AdminProducts.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/Admin/AdminProducts.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/Admin/AdminProducts.css",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/Admin/AdminProducts.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/categories.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/categories.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/categories.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/categories.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/header.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/header.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/header.css",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/header.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/orders.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/orders.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/orders.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/orders.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/pop_up/.DS_Store",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/pop_up/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/AddProd.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/AddProd.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/pop_up/AddProd.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/pop_up/AddProd.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/auth.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/auth.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/pop_up/auth.css",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/pop_up/auth.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/pop_up/EditProd.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/pop_up/EditProd.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/pop_up/EditProd.css",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/pop_up/EditProd.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/products.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/products.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/products.css",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/products.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/search.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/search.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/search.css",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/search.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/.DS_Store",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/.DS_Store",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/.DS_Store",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/.DS_Store"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/cart_side.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/cart_side.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/cart_side.css",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/cart_side.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/filter_side.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/filter_side.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/filter_side.css",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/filter_side.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/notify.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/notify.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/notify.css",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/notify.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/pay_side.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/pay_side.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/pay_side.css",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/pay_side.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/HomeCss/side_screens/side_base.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/HomeCss/side_screens/side_base.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/HomeCss/side_screens/side_base.css",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot/css/HomeCss/side_screens/side_base.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/css/site.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/css/site.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/favicon.ico",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/favicon.ico",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/auth_validations.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/auth_validations.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "js/auth_validations.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot/js/auth_validations.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/pop_ups.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/pop_ups.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "js/pop_ups.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot/js/pop_ups.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/js/side_screens.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/js/side_screens.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "js/side_screens.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot/js/side_screens.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "store",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/ofeksmacbook/Desktop/project/store/wwwroot/",
+      "ContentRoot": "/Users/ofeksmacbook/Downloads/project/store/wwwroot/",
       "BasePath": "_content/store",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
